@@ -1,0 +1,8 @@
+interface:
+  display_name: "Notion Visual Report"
+  short_description: "Create visual reports with native Notion blocks"
+  default_prompt: "Use $notion-visual-report to write a concise visual report in Notion."
+  icon_small: "assets/icon.svg"
+  icon_large: "assets/icon.svg"
+policy:
+  allow_implicit_invocation: true
