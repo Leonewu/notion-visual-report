@@ -82,7 +82,7 @@ flowchart TD
 <details>
 <summary>展开：特殊字符与代码样例</summary>
 	正文中的字面字符示例：\*星号\*、\[方括号\]、\<尖括号\>、\{花括号\}、竖线 \|、价格 \$5。
-	**关键短语**保留强调，[项目展示页](https://notion-visual-report-skill.freehorse4.chatgpt.site/)保留链接语法。
+	**关键短语**保留强调，[GitHub 仓库](https://github.com/Leonewu/notion-visual-report)保留链接语法。
 	```javascript
 	const options = ["table", "mermaid", "columns"];
 	const label = "<literal> $5 | *";
