@@ -17,7 +17,7 @@ Goal: a Notion page that can be skimmed in 30 seconds and read in depth in 5 min
 
 1. Read the Notion enhanced Markdown spec (`notion://docs/enhanced-markdown-spec`, via the Notion MCP fetch tool) once per session. Use the current spec for exact syntax. If it cannot be fetched, report the limitation rather than inventing block syntax.
 2. Decide the page skeleton from the content type (see Templates below).
-3. Write in the user's language (Chinese by default), keeping technical terms in English.
+3. Use the user's explicitly requested output language first. Otherwise, preserve the existing page's language when editing, or use the user's request language for a new page. Fall back to Chinese only when none of these determines a language. Keep technical terms in English and code, commands, API names and identifiers unchanged.
 
 ## Required elements on every report page
 
@@ -56,7 +56,7 @@ Goal: a Notion page that can be skimmed in 30 seconds and read in depth in 5 min
 
 ## Templates
 
-Adapt these skeletons to the content. Omit empty or irrelevant sections.
+Adapt these skeletons to the content. Omit empty or irrelevant sections. Localize the title, headings, table headers, callouts, diagram labels and toggle labels into the selected output language; the Chinese labels below are examples, not fixed output text.
 
 **Tech comparison / 选型分析**: TL;DR callout → TOC when applicable → 1. 本质区别 (bullets + Mermaid when useful) → 2. 对比表 → 3. 推荐做法 (numbered list + code when needed) → 4. 坑与技巧 (callouts) → 5. 决策速查表.
 
